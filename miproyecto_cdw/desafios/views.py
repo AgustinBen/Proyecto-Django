@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 # from django.template.loader import render_to_string
 
 # Create your views here.
@@ -44,4 +44,4 @@ def monthly_challenge(request, month):
                 'month': month,
                 'texto': meses[mes],
             })
-    return HttpResponse('<h1>No se encontro el mes</h1>')
+    raise Http404()   # return HttpResponse('<h1>No se encontro el mes</h1>')

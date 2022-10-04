@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Silkscreen&display=swap');
+
+html {
+    font-family: 'Noto Sans Mono', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #201f1f;
+}

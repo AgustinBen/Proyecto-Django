@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %}Desafios App{% endblock  %}
+
+{% block archivos_css %}
+    <link rel='stylesheet' href='{% static "desafios/desafios.css" %}'>
+{% endblock  %}
+
+{% block contenido %}
+    {% include 'desafios/includes/header.html' %}
     <h1>Desafios</h1>
     <ul>
         {% for mes in meses %}
-            <li><a href={{ mes }}>{{ mes}}</a></li>
+            <li><a href={{ mes }}>{{ mes }}</a></li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock  %}

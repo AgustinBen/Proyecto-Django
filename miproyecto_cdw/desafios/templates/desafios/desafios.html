@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ month }}</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block titulo %}{{ month }}{% endblock  %}
+
+{% block contenido %}
     <h1>{{ month | title }}</h1>
     {% if texto%}
         <p>{{ texto }}</p>
     {% else %}
         <p>Este mes no tiene desafios</p>
     {% endif %}
-    
-</body>
-</html>
+{% endblock  %}
