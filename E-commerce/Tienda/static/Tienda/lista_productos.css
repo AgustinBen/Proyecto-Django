@@ -1,8 +1,10 @@
 body{
-    background-image: url('img/platter.jpg');
+    background-image: url('img/raspberries.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+
 }
+
 .titulo{
     background-color: rgba(0, 0, 0, 0.479);
     border-radius: 20px;
