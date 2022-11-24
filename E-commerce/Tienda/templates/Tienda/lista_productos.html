@@ -38,7 +38,7 @@
                         <tr>
                             <th scope="row">1</th>
                             {% for producto in productos %}
-                            <td>{{producto.nombre}}</td>
+                            <td><a href={{producto.get_url}}>{{producto.nombre}} ({{producto.precio}})</a></td>
                             {% endfor %}
                         </tr>
                         <tr>
@@ -77,4 +77,4 @@
     </div>
 </body>
 {% endblock  %}
- 
+  
